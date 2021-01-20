@@ -26,7 +26,11 @@
 
   <ItemGroup>
     <Folder Include="Areas\Admin\Data\" />
+<<<<<<< HEAD
     <Folder Include="Areas\Admin\Views\Jobs\" />
+=======
+    <Folder Include="Areas\Admin\Controllers\" />
+>>>>>>> 2c8c51be0bbf7bafb4a6ca5099e7d74a90e8252e
   </ItemGroup>
 
 </Project>
