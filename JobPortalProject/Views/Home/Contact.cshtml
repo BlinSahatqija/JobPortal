@@ -1,8 +1,77 @@
-﻿@{ ViewData["Title"] = "Contact"; }
-<h2>@ViewData["Title"]</h2>
-<h3>@ViewData["Message"]</h3>
+﻿@{
+    ViewData["Title"] = "Contact";
+}
 
-<address>
-    <p>Per cdo paqartesi telefoni ne 044 123 444</p>
-</address>
+<div class="container" style="background-color: #f2f2f2;">
+    <div style="text-align:center">
+        <h2>Contact Us</h2>
+        <p>Leave us a message:</p>
+    </div>
+    <div class="row">
+        <div class="column">
+            <img src="/img/map.jpg" style="width:100%">
+        </div>
+        <div class="column">
+            <form>
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                <label for="country">Country</label>
+                <select id="country" name="country">
+                    <option value="australia">Australia</option>
+                    <option value="canada">Canada</option>
+                    <option value="usa">USA</option>
+                    <option value="kosova">Kosova</option>
+                    <option value="albania">Albania</option>
+                </select>
+                <label for="subject">Subject</label>
+                <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </div>
+</div>
 
+<style scoped>
+    * {
+  box-sizing: border-box;
+}
+
+/* Style inputs */
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+    input[type=submit] {
+        background-color: #1d7c99;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        cursor: pointer;
+    }
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Create two columns that float next to eachother */
+.column {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+</style>
